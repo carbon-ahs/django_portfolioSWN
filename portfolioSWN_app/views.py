@@ -30,7 +30,7 @@ def home(request):
         'key': 'value',
         'contrac_form': contrac_form,
     }
-    return render(request, 'home.html', contex)
+    return render(request, 'index.html', contex)
 
 
 
