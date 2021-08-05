@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title%}
+    {{ header }} | {{ app_name }}
+{% endblock title %}
+
+{% block content %}
+<h1> {{ header }} </h1>
+
+{% if all_comments %}
+    {% for comment in all_comments %}
+        {{comment.name}} || {{comment.name}} </br>
+    {% endfor %}
+{% endif %}
+
+{% endblock content %}

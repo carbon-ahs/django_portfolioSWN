@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title%}
+    Home | portfolio_app
+{% endblock title %}
+
+{% block content %}
+<h1> Home </h1>
+    {% if contrac_form %}
+        <form class='form-group' action="#" method="post">
+            {% csrf_token %}
+            {{ contrac_form }}
+            <input type="submit" value="Submit">
+        </form>
+    {% endif %}
+    
+    </br></br></br></br></br></br></br>
+    
+{% endblock content %}
